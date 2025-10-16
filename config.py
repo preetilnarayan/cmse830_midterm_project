@@ -1,2 +1,2 @@
 # STUDENT_DATA_PATH = r"YOUR_CSV_FILE_PATH"
-STUDENT_DATA_PATH="data\student_data.csv"
+STUDENT_DATA_PATH="data/student_data.csv"
