@@ -17,7 +17,7 @@ def show_home():
 
     # Optional Banner Image (from assets folder if available)
     try:
-        image = Image.open("./assets/student_success_banner.png")
+        image = Image.open("cmse830_midterm_project/assets/student_success_banner.png")
         st.image(image, use_container_width=True)
     except Exception:
         st.info("STUDENT SUCCESS VS DROPOUT IMAGE PLACEHOLDER")
