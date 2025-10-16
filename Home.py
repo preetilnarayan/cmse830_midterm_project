@@ -16,14 +16,11 @@ def show_home():
     """, unsafe_allow_html=True)
     st.markdown('<p class="subtitle">An interactive data-driven exploration for understanding factors influencing academic success.</p>', unsafe_allow_html=True)
 
-    # Load Image
-    script_dir = os.path.dirname(__file__)
-    img_path = os.path.join(script_dir, "assets", "student_success_banner.png")
-
-    if os.path.exists(img_path):
-        image = Image.open(img_path)
+    # Optional Banner Image (from assets folder if available)
+    try:
+        image = Image.open("assets/student_success_banner.png")
         st.image(image, use_container_width=True)
-    else:
+    except Exception:
         st.info("STUDENT SUCCESS VS DROPOUT IMAGE PLACEHOLDER")
 
     # App Overview
